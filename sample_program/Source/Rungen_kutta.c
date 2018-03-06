@@ -48,11 +48,11 @@ int main(){
    omega_0 = 5.0; // 調和振動子の角振動数
    omega = 5.0; // 強制振動の角振動数(適宜変更)
    A = 10.0; // 振幅
-   printf("%.15e　%.15e %.15e\n", t, x[0], x[1]);
+   printf("%.15e %.15e %.15e\n", t, x[0], x[1]);
    while(t <= max){
      Rungen_Kutta(t, dt);
      t += dt;
-     printf("%.15e　%.15e %.15e\n", t, x[0], x[1]);
+     printf("%.15e %.15e %.15e\n", t, x[0], x[1]);
    }
    return 0;
 }
